@@ -5,7 +5,7 @@ import {Component, Input} from '@angular/core';
   template: `
     <span class="product-icon">{{product}}</span>
     <div>
-      <button (click)="onProductClick()">+Agregar</button>
+      <button (click)="onProductClick()">+ Agregar</button>
     </div>
   `
 })
