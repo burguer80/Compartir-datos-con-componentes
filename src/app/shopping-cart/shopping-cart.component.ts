@@ -1,15 +1,15 @@
-import {Component, Input} from '@angular/core'
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-shopping-cart',
   template: `
-  <p class="product-icon">
-    {{itemsList}}
-  </p>
+    <p class="product-icon">
+      {{itemsList}}
+    </p>
   `
 })
 export class ShoppingCartComponent {
 
-  @Input() itemsList: string[] = ['💻', '🎮', '📱']
+  @Input() itemsList: string[] = ['💻', '🎮', '📱'];
 
 }
