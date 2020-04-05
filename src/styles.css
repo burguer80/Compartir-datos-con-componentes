@@ -26,6 +26,7 @@ button:focus {
 
 h1 {
   font-size: 3.4rem;
+  flex: 100%;
 }
 
 .container {
@@ -44,8 +45,18 @@ h1 {
   flex-flow: column;
 }
 
+.product-icon {
+  font-size: 6rem;
+  margin-left: 10px;
+}
+
 .product-list {
   background-color: tomato;
+
+  /*layout*/
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
 }
 
 .shopping-cart {

@@ -3,9 +3,9 @@ import {Component, Input} from '@angular/core';
 @Component({
   selector: 'app-product',
   template: `
-    <p>
-      <button (click)="onProductClick()">+</button>
       <span class="product-icon">{{product}}</span>
+    <p>
+      <button (click)="onProductClick()">+Agregar</button>
     </p>
   `,
   styleUrls: ['./product.component.css']
