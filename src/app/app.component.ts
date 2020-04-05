@@ -1,4 +1,4 @@
-import {Component} from '@angular/core'
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +12,12 @@ export class AppComponent {
     '💻',
     '🔭',
     '📷',
-  ]
-  selectedProducts: string[] = ['💻', '🎮', '📱'];
+  ];
+  selectedProducts: string[] = [];
+
+
+  addToShoppingCart($event) {
+    this.selectedProducts.push($event);
+    this.selectedProducts = this.selectedProducts.slice();
+  }
 }
