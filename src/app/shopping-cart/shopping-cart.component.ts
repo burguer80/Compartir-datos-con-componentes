@@ -1,19 +1,15 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-shopping-cart',
   template: `
   <p class="product-icon">
-    {{productsBasket}}
+    {{itemsList}}
   </p>
-  `,
-  styleUrls: ['./shopping-cart.component.css']
+  `
 })
-export class ShoppingCartComponent implements OnInit {
+export class ShoppingCartComponent {
 
-  @Input() productsBasket: string[] = ['💻', '🎮', '📱'];
-
-  ngOnInit(): void {
-  }
+  @Input() itemsList: string[] = ['💻', '🎮', '📱'];
 
 }
