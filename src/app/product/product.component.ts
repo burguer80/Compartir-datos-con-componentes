@@ -5,13 +5,13 @@ import {Component, Input} from '@angular/core';
   template: `
     <p>
       <button (click)="onProductClick()">+</button>
-      {{product.id}} <b>{{product.name}}</b>
+      <b>{{product}}</b>
     </p>
   `,
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent {
-  @Input() product: any;
+  @Input() product: string;
 
   onProductClick() {
     console.log(this.product);
