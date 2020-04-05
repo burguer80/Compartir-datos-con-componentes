@@ -4,7 +4,7 @@ import {Component, Input} from '@angular/core';
   selector: 'app-product',
   template: `
     <p>
-    <button (click)="onProductClick()">+</button>
+      <button (click)="onProductClick()">+</button>
       {{product.id}} <b>{{product.name}}</b>
     </p>
   `,
@@ -14,6 +14,6 @@ export class ProductComponent {
   @Input() product: any;
 
   onProductClick() {
-    console.log(this.product)
+    console.log(this.product);
   }
 }

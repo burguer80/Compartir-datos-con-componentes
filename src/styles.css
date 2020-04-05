@@ -8,12 +8,19 @@ button {
   background-color: #4CAF50;
   border: none;
   color: white;
-  display: inline-block;
+  cursor: pointer;
   font-size: 1.5rem;
-  /*padding: 15px 22px;*/
   margin-right: 10px;
   text-align: center;
   text-decoration: none;
+}
+
+button:active {
+  background-color: green;
+}
+
+button:focus {
+  outline: 0;
 }
 
 .container {
