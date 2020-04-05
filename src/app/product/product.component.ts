@@ -3,10 +3,10 @@ import {Component, Input} from '@angular/core';
 @Component({
   selector: 'app-product',
   template: `
-      <span class="product-icon">{{product}}</span>
-    <p>
+    <span class="product-icon">{{product}}</span>
+    <div>
       <button (click)="onProductClick()">+Agregar</button>
-    </p>
+    </div>
   `,
   styleUrls: ['./product.component.css']
 })
