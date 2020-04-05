@@ -5,7 +5,7 @@ import {Component, Input} from '@angular/core';
   template: `
     <p>
       <button (click)="onProductClick()">+</button>
-      <b>{{product}}</b>
+      <span class="product-icon">{{product}}</span>
     </p>
   `,
   styleUrls: ['./product.component.css']
