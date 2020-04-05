@@ -10,5 +10,4 @@ import {Component, Input} from '@angular/core';
 })
 export class ShoppingCartComponent {
   @Input() itemsList: string[];
-
 }
