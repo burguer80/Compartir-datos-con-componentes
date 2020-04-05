@@ -13,4 +13,5 @@ export class AppComponent {
     '🔭',
     '📷',
   ]
+  selectedItems: string[] = ['💻', '🎮', '📱'];
 }
