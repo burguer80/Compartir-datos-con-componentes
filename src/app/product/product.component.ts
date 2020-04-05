@@ -7,8 +7,7 @@ import {Component, Input} from '@angular/core';
     <div>
       <button (click)="onProductClick()">+Agregar</button>
     </div>
-  `,
-  styleUrls: ['./product.component.css']
+  `
 })
 export class ProductComponent {
   @Input() product: string;
