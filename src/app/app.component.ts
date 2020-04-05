@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +17,6 @@ export class AppComponent {
 
 
   addToShoppingCart($event) {
-    this.selectedProducts.push($event);
-    this.selectedProducts = this.selectedProducts.slice();
+    this.selectedProducts = this.selectedProducts.concat($event);
   }
 }
