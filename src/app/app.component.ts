@@ -1,10 +1,22 @@
-import { Component } from '@angular/core';
+import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'ComponentSharedData';
+  products: string[] = [
+    '🖥',
+    '🎮',
+    '📱',
+    '💻',
+    '🔭',
+    '📷',
+  ];
+  selectedProducts: string[] = [];
+
+
+  addToShoppingCart($event) {
+    this.selectedProducts = this.selectedProducts.concat($event);
+  }
 }
